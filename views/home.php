@@ -1,6 +1,5 @@
 <?php
-$name = 'matu';
-$num = 10;
+
 ?>
 
         <?php include __DIR__ . '/partials/header.php'; ?>
