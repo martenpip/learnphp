@@ -6,6 +6,6 @@ class PublicController {
         view('home');
     }
     public function about(){
-        echo 'about';
+        view('about');
     }
 }

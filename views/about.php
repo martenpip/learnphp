@@ -1,3 +1,3 @@
-<?php include __DIR__ . 'partials/header.php'; ?>
+<?php include __DIR__ . '/partials/header.php'; ?>
 <h1><?$name?></h1>
-<?php include __DIR__ . 'partials/footer.php'; ?>
+<?php include __DIR__ . '/partials/footer.php'; ?>
