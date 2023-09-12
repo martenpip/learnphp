@@ -2,9 +2,9 @@
 
 use app\Router;
 use App\Controllers\PublicController;
-Router::addRoute('/',[PublicController::class, 'home']);
+Router::get('/',[PublicController::class, 'home']);
+Router::get('/about',[PublicController::class, 'about']);
 
-Router::addRoute('/about',[PublicController::class, 'about']);
-
-Router::addRoute('/test',[PublicController::class, 'test']);
+Router::get('/test',[PublicController::class, 'test']);
+Router::post('/test',[PublicController::class, 'testAnswer']);
 

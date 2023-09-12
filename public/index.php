@@ -12,7 +12,9 @@ use app\Router;
 require __DIR__ . '/../routes.php';
 include __DIR__ . '/../helper.php';
 
-$router = new Router($_SERVER['REQUEST_URI']);
+$router = new Router($_SERVER['REQUEST_URI'], $_SERVER['REQUEST_METHOD']);
+var_dump($router);
+var_dump(Router::$routes);
 $match = $router->match();
 if($match){
     if(is_callable($match['action'])){

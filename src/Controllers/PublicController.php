@@ -13,5 +13,10 @@ class PublicController {
     }
     public function test(){
         var_dump($_GET);
+        var_dump($_SERVER);
+        view('form');
+    }
+    public function testAnswer(){
+        var_dump($_POST);    
     }
 }
