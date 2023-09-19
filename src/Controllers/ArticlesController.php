@@ -16,4 +16,12 @@ class ArticlesController {
     public function create(){
         view('articles/create');
     }
+
+    public function store(){
+        var_dump($_POST);
+        $article = new Article();
+        $article->title = $_POST['title'];
+        $article->body = $_POST['body'];
+        $article->save();
+    }
 }
