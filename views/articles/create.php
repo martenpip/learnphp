@@ -6,7 +6,7 @@
         <div class="field">
             <label class="label" for="title">Title</label>
             <div class="control">
-                <input class="input" type="text" placeholder="Text input" name="title" id="title">
+                <input class="input" type="text" placeholder="Title" name="title" id="title">
             </div>
         </div>
         <div class="field">
@@ -15,12 +15,11 @@
                 <textarea class="textarea" placeholder="Content..." name="body" id="body"></textarea>
             </div>
         </div>
-
         <div class="field">
             <div class="control">
-                <input class="button is-primary" type="submit">
+                <input class="button is-primary" type="submit" value="Submit">
             </div>
         </div>
     </form>
 </div>
-<?php include __DIR__ . '/../partials/footer.php'; ?>
+<?php include __DIR__ .  '/../partials/footer.php'; ?>

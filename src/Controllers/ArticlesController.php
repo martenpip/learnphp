@@ -1,11 +1,8 @@
 <?php
 
-
 namespace App\Controllers;
 
-
 use App\Models\Article;
-
 
 class ArticlesController {
     public function index(){
@@ -18,7 +15,6 @@ class ArticlesController {
     }
 
     public function store(){
-        var_dump($_POST);
         $article = new Article();
         $article->title = $_POST['title'];
         $article->body = $_POST['body'];
