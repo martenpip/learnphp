@@ -1,11 +1,6 @@
 <?php
 
-spl_autoload_register(function ($className){
-    
-    $className = substr($className, 4);
-   
-    require_once __DIR__ . "/../src/$className.php";
-});
+require __DIR__ . '/../vendor/autoload.php';
 
 use App\Router;
 
@@ -18,7 +13,7 @@ if($match){
     if(is_callable($match['action'])){
         call_user_func($match['action']);
     } else if(is_array($match['action'])){
-        $class = $match['action'][0]; // 'App\Controllers\PublicController'
+        $class = $match['action'][0]; 
         $controller = new $class();
         $method = $match['action'][1];
         $controller->$method();
@@ -26,3 +21,4 @@ if($match){
 } else {
     echo 404;
 }
+

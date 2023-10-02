@@ -1,0 +1,18 @@
+{
+    "name": "marten.pipenberg/learnphp",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Marten",
+            "email": "marten.pipenberg@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/var-dumper": "^6.3"
+    }
+}
