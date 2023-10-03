@@ -1,5 +1,5 @@
 {
-    "name": "marten.pipenberg/learnphp",
+    "name": "kaspar.martin.suursa/mm21learnphp",
     "type": "project",
     "autoload": {
         "psr-4": {
@@ -8,8 +8,8 @@
     },
     "authors": [
         {
-            "name": "Marten",
-            "email": "marten.pipenberg@gmail.com"
+            "name": "Kaspar Martin Suursalu",
+            "email": "kasparsu@gmail.com"
         }
     ],
     "require": {

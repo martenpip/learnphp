@@ -1,6 +1,4 @@
 <?php
-
-
 namespace App\Models;
 
 use App\DB;
@@ -12,6 +10,10 @@ class Model {
     public static function all(){
         $db = new DB();
         return $db->all(static::$table, static::class);
+    }
+    public static function where($field, $value){
+        $db = new DB();
+        return $db->where(static::$table, static::class, $field, $value);
     }
 
     public static function find($id){
@@ -25,15 +27,11 @@ class Model {
         if($this->id){
             $db->update(static::$table, $fields);
         } else {
-        $db->insert(static::$table, $fields);
-    }
+            $db->insert(static::$table, $fields);
+        }
     }
     public function delete(){
         $db = new DB();
         $db->delete(static::$table, $this->id);
-    }
-    public static function where($field, $value){
-        $db = new DB();
-        return $db->where(static::$table, static::class, $field, $value);
     }
 }
