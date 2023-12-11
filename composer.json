@@ -1,5 +1,5 @@
 {
-    "name": "kaspar.martin.suursa/mm21learnphp",
+    "name": "roland.tahker/learnphp",
     "type": "project",
     "autoload": {
         "psr-4": {
@@ -8,11 +8,11 @@
     },
     "authors": [
         {
-            "name": "Kaspar Martin Suursalu",
-            "email": "kasparsu@gmail.com"
+            "name": "RolandTahker",
+            "email": "rolandtahker@gmail.com"
         }
     ],
-    "require": {
-        "symfony/var-dumper": "^6.3"
+    "require-dev": {
+        "laravel/breeze": "^1.25"
     }
 }

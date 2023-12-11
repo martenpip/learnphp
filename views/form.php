@@ -4,4 +4,4 @@
         <input type="number" placeholder="Age" name="age">
         <input type="submit" value="Saada">
     </form>
-<?php include __DIR__ .  '/partials/footer.php'; ?>
+<?php include __DIR__ .  '/partials/footer.php'; ?> 

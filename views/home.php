@@ -1,6 +1,6 @@
 <?php include __DIR__ . '/partials/header.php'; ?>
 <div class="container">
-    <div class="columns is-multiline">
+    <div class="columns">
         <?php foreach($articles as $article): ?>
             <div class="column is-3">
                 <div class="card">
